@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #background-video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1; /* Ensures video is behind the content */
+            object-fit: cover;
+        }
+
+        header {
+            background-color: rgba(205, 52, 235, 0.8);
+            color: rgb(255, 238, 0);
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: rgba(0, 200, 255, 0.8);
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        .main {
+            padding: 20px;
+        }
+
+        .content {
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .content > div {
+            width: 100%; /* Full width for contact section */
+            padding: 10px;
+        }
+
+        .contact {
+            background-color: #f7c9a6b6; /* Same color as educational background */
+        }
+
+        /* Form styles */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin: 10px 0 5px;
+        }
+
+        input, textarea {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: rgba(205, 52, 235, 0.8);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: rgba(118, 24, 163, 1);
+        }
+
+        /* Footer styles */
+        footer {
+            background: linear-gradient(90deg, rgba(205, 52, 235, 1) 0%, rgba(118, 24, 163, 1) 100%);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            font-size: 14px;
+            position: relative;
+        }
+
+        footer p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: white;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+
+        .social-icons a:hover {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Video -->
+    <video id="background-video" autoplay muted loop>
+        <source src="C:\Users\HP\OneDrive\Desktop\website\172788-847869832.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <header>
+        <h1>CONTACT ME</h1>
+    </header>
+
+    <nav>
+        <a href="C:\Users\HP\OneDrive\Desktop\website\index.html">Home</a>
+        <a href="C:\Users\HP\OneDrive\Desktop\website\about.html">About</a>
+        <a href="C:\Users\HP\OneDrive\Desktop\website\contact.html">Contact</a>
+    </nav>
+
+    <div class="content contact">
+        <div>
+            <h2>Get in Touch</h2>
+            <form action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Rohan Kumar. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#">Facebook</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Twitter</a>
+            <p>.................................</p>
+            <p>Phone Number: 123456789</p>
+            <p>Email: rohankumar.2024@uem.edu.in</p>
+        </div>
+    </footer>
+
+</body>
+</html>
